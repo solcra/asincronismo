@@ -6,7 +6,10 @@
   "scripts": {
     "callback": "node src/callback/index.js",
     "api": "node src/callback/challenge.js",
-    "promise": "node src/promise/index.js"
+    "promise": "node src/promise/index.js",
+    "promise:callenge": "node src/promise/challenge.js",
+    "asyn": "node src/async/index.js",
+    "asyn:challenge": "node src/async/challenge.js"
   },
   "keywords": [
     "Callbacksm",

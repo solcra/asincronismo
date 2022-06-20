@@ -23,12 +23,14 @@ fetchData(API, function(error1, data1){
         if(error2) return console.error(error2); 
         fetchData(data2.origin.url, function(error3, data3){
             if(error3) return console.error(error3); 
-            console.log(data1);
-            console.log(data1.info);
-            console.log(data1.info.count);
-            console.log(data2)
-            console.log(data2.name);
-            console.log(data3);
+            //console.log(data1);
+            //console.log(data1.info);
+            //console.log(data1.info.count);
+            // console.log(data2)
+            // console.log(data2.name);
+            // console.log(data3);
+            console.log(API + data1.results[0].id);
+            console.log(data2.origin.url);
             console.log(data3.dimension);
         })
     })
