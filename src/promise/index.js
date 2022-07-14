@@ -36,3 +36,23 @@ Promise.all([somethingWillHappen(), somethingWillHappen2()])
     .catch(err => {
         console.error(err);
     })
+
+const promise = new Promise(function(resolve, reject){
+    resolve('Hey!')
+})
+
+const cows = 10;
+
+const countCows = new Promise(function (resolve, reject){
+    if (cows > 16){
+        resolve(`We have ${cows} cows on the fanm`);
+    } else {
+        reject("There is no cows on the farm");
+    }
+})
+
+countCows.then((result) =>{
+    console.log(result);
+}).catch((error) =>{
+    console.log(error)
+}).finally(() => console.log('Finally'));

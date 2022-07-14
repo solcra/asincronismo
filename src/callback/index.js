@@ -26,3 +26,9 @@ function printDate(dateNow){
 }
 
 date(printDate)
+
+function gretting(name){
+    console.log(`Hola ${name}`);
+}
+
+setTimeout(gretting, 2000, 'Carlos');
