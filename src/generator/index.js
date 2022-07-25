@@ -21,4 +21,4 @@ const it = interate(['oscar', 'omar','andrea','lucia','juan']);
 
 console.log(it.next().value)
 console.log(it.next().value)
-console.log(it.next())
+console.log(it.next().value)
